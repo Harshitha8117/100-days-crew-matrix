@@ -1,3 +1,9 @@
+Java program to chaeck whether the given number is odd or even 
+sample input:
+48
+output 
+Even
+Solution:
 import java.util.Scanner;
 class b{
   public static void main(String[] args){
