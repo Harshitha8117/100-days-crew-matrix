@@ -1,3 +1,9 @@
+Java program to check the greatest among three number 
+Sample input:
+4 5 2
+Output:
+b is greater
+Solution:
 import java.util.Scanner;
 class d{
   public static void main(String[] args){
