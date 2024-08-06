@@ -1,3 +1,9 @@
+Java program to display sum of N natural numbers 
+Sample input:
+5
+Output:
+15
+Solution:
 import java.util.Scanner;
 class c{
   public static void main(String[] args){
