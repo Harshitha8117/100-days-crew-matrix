@@ -1,0 +1,20 @@
+Java program to check the given pair is oneful pair or not 
+Sample input:
+(1,55)
+Output:
+Oneful Pair
+Solution:
+import java.scanner.*;
+class a{
+public static void main(String[] args){
+int a,b,c;
+Scanner sc=new Scanner(System.in);
+a=sc.nextInt();
+b=sc.nextInt();
+c=a+b+(a*b);
+if(c==111)
+System.out.print("Oneful Pair");
+else
+System.out.print("Not Oneful Pair");
+}
+}
