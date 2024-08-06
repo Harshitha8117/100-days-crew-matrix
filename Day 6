@@ -4,7 +4,7 @@ Sample input:
 Output:
 Oneful Pair
 Solution:
-import java.scanner.*;
+import java.util.Scanner;
 class a{
 public static void main(String[] args){
 int a,b,c;
