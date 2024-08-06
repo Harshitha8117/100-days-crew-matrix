@@ -1,0 +1,26 @@
+Java program accepts string and prints "Yes" if the string ends with the value "ion". Else the program must print "No".
+Example Input/Output 1:
+Input:
+instrumentation
+Output:
+Yes
+Example Input/Output 2:
+Input:
+experimentatjon
+Output:
+No
+
+ import java.util.Scanner;
+ public class a {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();   
+        if (str.endsWith("ion")) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
+  
