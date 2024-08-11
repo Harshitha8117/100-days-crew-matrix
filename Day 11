@@ -1,0 +1,26 @@
+Determine whether the average of A and B is strictly greater than C or not?
+
+Output Format
+For each test case, output YES if average of A and 
+B is strictly greater than C, NO otherwise.
+
+Solution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for(int i=0;i<t;i++){
+        float a=sc.nextInt();
+        float b=sc.nextInt();
+        float c=sc.nextInt();
+        float d=(a+b)/2;
+        if(d>c) System.out.println("YES");
+        else System.out.println("NO");
+        }
+	}
