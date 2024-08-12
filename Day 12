@@ -1,0 +1,42 @@
+CodeChef recently revamped its practice page to make it easier for users to identify the next problems they should solve by introducing some new features:
+
+    Recent Contest Problems - contains only problems from the last 2 contests
+    Separate Un-Attempted, Attempted, and All tabs
+Problem Difficulty Rating - the Recommended dropdown menu has various difficulty ranges so that you can attempt the problems most suited to your experience
+Sample input:
+5
+3
+800 1200 900
+4
+999 1000 1001 1002
+5
+1 2 2 2 5000
+5
+1000 1000 1000 1000 1000
+3
+900 700 800
+Solution:
+import java.io.*;
+import java.util.Scanner;
+class code{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int count;
+        int t=sc.nextInt();
+        for(int j=0;j<t;j++){
+        count=0;
+        int num=sc.nextInt();
+            int[] a= new int[num];
+            for(int i=0;i<num;i++){
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<num;i++){
+            
+        if(a[i]>=1000){
+        count++;
+        }
+        }
+        System.out.println(count);
+        }
+}
+}
