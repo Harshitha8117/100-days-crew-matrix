@@ -1,0 +1,11 @@
+space-separated integers — 
+X
+,
+A
+X,A, and 
+B
+B.
+Output Format
+For each test case, output a new line containing the answer — Qualify if Chef qualifies for the next round, and NotQualify otherwise.
+solution:
+33⁴³¾
