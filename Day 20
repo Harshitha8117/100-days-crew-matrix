@@ -1,0 +1,65 @@
+You are given the sequence of Nucleotides of one strand of DNA through a string S of length N. 
+S contains the character A,T,C and G only.
+Chef knows that:
+A is complementary to T
+T is complementary to A
+C is complementary to G
+G is complementary to C
+Using the string S, determine the sequence of the complementary strand of the DNA.
+
+Input:
+4
+4
+ATCG
+4
+GTCC
+5
+AAAAA
+3
+TAC
+
+Output:
+TAGC
+CAGG
+TTTTT
+ATG
+
+Solution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		
+		for(int i=0; i<t; i++){
+		    int n = sc.nextInt();
+		    String s = sc.next();
+		    
+		    StringBuilder complement = new StringBuilder();
+		    
+		    for(int j=0; j<n; j++){
+		        char a = s.charAt(j);
+		        switch(a){
+		            case 'A':
+		                complement.append('T');
+		                break;
+		            case 'T':
+		                complement.append('A');
+		                break;
+		            case 'C':
+		                complement.append('G');
+		                break;
+		            case 'G':
+		                complement.append('C');
+		                break;
+		        }
+		    }
+		     System.out.println(complement.toString());
+		}
+	}
+}
