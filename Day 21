@@ -1,0 +1,43 @@
+Alice and Bob both bought a full cake each.Alice's cake has A slices, and Bob's cake has B slices.Alice will be unhappy if she has strictly less slices than Bob does. Similarly, Bob will be unhappy if he has strictly less slices than Alice does.
+Input:
+4
+10 8
+13 13
+28 100
+3 14
+Output:
+14
+0
+122
+11
+Solution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+public static void main (String[] args) throws java.lang.Exception
+{
+Scanner sc = new Scanner(System.in);
+int t=sc.nextInt();
+for(int i=0;i<t;i++){
+int a=sc.nextInt();
+int b=sc.nextInt();
+int sum=0,c=0,d=0;
+for(int j=0;a!=b;j++){
+   if(a>b){
+   c=(a/2)+1;
+   sum=sum+c;
+   a=a-c;
+   }
+   else{
+   d=(b/2)+1;
+   sum=sum+d;
+   b=b-d;
+   }
+}
+        System.out.println(sum);
+}
+}
+}
