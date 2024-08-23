@@ -1,0 +1,41 @@
+Candy Distribution Chef has N candies. He has to distribute them to exactly M of his friends such that each friend gets equal number of candies and each friend gets even number of candies. Determine whether it is possible to do so.
+
+NOTE: Chef will not take any candies himself and will distribute all the candies.
+INPUT:
+4
+9 3
+4 1
+4 2
+8 3
+Output:
+No
+Yes
+Yes
+No
+Solution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int a=sc.nextInt();
+		    int b=sc.nextInt();
+		    int c=a/b;
+		    if(a%b==0){
+		    if(c%2==0)
+		    System.out.println("YES");
+		    else
+		    System.out.println("NO");
+		    }
+		    else
+		    System.out.println("NO");
+		}
+
+	}
+}
