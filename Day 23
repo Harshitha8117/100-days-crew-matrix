@@ -1,0 +1,39 @@
+Chef received N candies on his birthday. He wants to put these candies in some bags. A bag has K pockets and each pocket can hold at most M candies. Find the minimum number of bags Chef needs so that he can put every candy into a bag.
+
+INPUT:
+4
+6 2 3
+3 1 2
+8 4 1
+25 4 2
+
+OUTPUT:
+1
+2
+2
+4
+
+Solution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int a=sc.nextInt();
+		    int b=sc.nextInt();
+		    int c=sc.nextInt();
+		    int d=b*c;
+		    if(a%d==0)
+		    System.out.println(a/d);
+		    else 
+		    System.out.println((a/d)+1);
+		}
+
+	}
+}
