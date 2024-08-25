@@ -1,0 +1,34 @@
+Valentine's Day is approaching and thus Chef wants to buy some chocolates for someone special.Chef has a total of X rupees and one chocolate costs Y rupees. What is the maximum number of chocolates Chef can buy?
+Input:
+4
+5 10
+16 5
+35 7
+100 1
+output:
+0
+3
+5
+100
+Solution:
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int a=sc.nextInt();
+		    int b=sc.nextInt();
+		    if(a>=b){
+		        System.out.println(a/b);
+		    }
+		    else
+		    System.out.println(0);
+		}
+
+	}
+}
