@@ -1,0 +1,34 @@
+It is the World Cup Finals. Chef only finds a match interesting if the skill difference of the competing teams is less than or equal to 
+D.Given that the skills of the teams competing in the final are X and Y respectively, determine whether Chef will find the game interesting or not.
+INPUT:
+3
+5 3 4
+5 3 1
+5 5 0 
+Output:
+YES
+NO
+YES
+Solution:
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++){
+		    int a=sc.nextInt();
+		    int b=sc.nextInt();
+		    int c=sc.nextInt();
+		    if((a-b)<=c && (b-a)<=c)
+		    System.out.println("YES");
+		    else
+		    System.out.println("NO");
+		}
+
+	}
+}
