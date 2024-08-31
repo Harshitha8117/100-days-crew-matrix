@@ -1,0 +1,75 @@
+Chef and Chefina are residing in a hotel.There are 10 floors in the hotel and each floor consists of 10 rooms.
+Floor 
+1 consists of room numbers 1 to 10.
+Floor 2 consists of room numbers 11 to 20.
+…
+…
+Floor i consists of room numbers 10.
+You know that Chef's room number is X while Chefina's Room number is Y.If Chef starts from his room, find the number of floors he needs to travel to reach Chefina's room.
+INPUT:
+4
+1 100
+42 50
+53 30
+81 80
+OUTPUT:
+9
+0
+3
+1
+SOLUTION:
+import java.util.*;
+
+import java.lang.*;
+
+import java.io.*;
+
+
+
+class Codechef
+
+{
+
+	public static void main (String[] args) throws java.lang.Exception
+
+	{
+
+		// your code goes here
+
+         Scanner sc = new Scanner(System.in);
+
+        int T = sc.nextInt(); // Read the number of test cases
+
+        
+
+        for (int i = 0; i < T; i++) {
+
+            int X = sc.nextInt();
+
+            int Y = sc.nextInt();
+
+            
+
+            // Calculate the floor number for rooms X and Y
+
+            int floorX = (X + 9) / 10;
+
+            int floorY = (Y + 9) / 10;
+
+            
+
+            // Calculate the number of floors Chef needs to travel
+
+            int floorsToTravel = Math.abs(floorX - floorY);
+
+            
+
+            // Print the result
+
+            System.out.println(floorsToTravel);
+
+        }
+
+	}
+
+}
