@@ -1,0 +1,34 @@
+Write a java program to reverse a number untill the the last occurrence of 2 then appaend the remaining number,if there is no occurence of 2 then return the original number 
+
+Sample Input:
+34527627
+
+Sample Output :
+26725437
+
+Solution :
+import java.io.*;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int n = scanner.nextInt();
+        String string = String.valueOf(n);
+        int find = string.lastIndexOf('2');
+        if (find == -1) {
+            System.out.println(n);
+        } else {
+            String reversed = reverse(string.substring(0, find + 1));
+            String remaining = string.substring(find+1);
+            System.out.println(Integer.parseInt(reversed+remaining));
+        }
+    }
+    public static String reverse(String str) {
+        String reversed = "";
+        for (int i=str.length()-1;i>=0;i--) {
+            reversed+=str.charAt(i);
+        }
+        return reversed;
+    }
+}
