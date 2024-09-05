@@ -1,0 +1,15 @@
+palindrome 
+
+Class solution {
+Public void palindrome (int x){
+int digit,sum=0,temp;
+temp=n;
+while(x>0){
+digit=x%10;
+sum=(sum*10)+dig;
+x=x/10;
+}
+return (sum==temp);
+}
+}
+
