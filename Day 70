@@ -1,0 +1,40 @@
+Find whether the given number is power of 2 or not.
+
+Input Format
+
+int
+
+Constraints
+
+NULL
+
+Output Format
+
+YES or NO
+
+Sample Input 0
+
+8
+Sample Output 0
+
+YES
+
+Solution:
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a<=0) 
+            System.out.print("NO");
+
+else if((a&(a-1))==0)
+                System.out.print("YES");
+        else 
+            System.out.print("NO");
+    }
+}
