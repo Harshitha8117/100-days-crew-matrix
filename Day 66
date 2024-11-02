@@ -1,1 +1,54 @@
-tu is se
+program to check the given string is anagram or not
+Input Format
+
+Accept two strings as input
+
+Constraints
+
+Null
+
+Output Format
+
+Anagrams / Not Anagrams
+
+Sample Input 0
+
+Tom
+Mom
+Sample Output 0
+
+Tom and Mom are Not Anagrams.
+Sample Input 1
+
+listen
+silent
+Sample Output 1
+
+listen and silent are Anagrams.
+
+Solution:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.next();
+        String b=sc.next();
+     
+       
+        char[] c=a.toCharArray();
+        char[] d=b.toCharArray();
+        Arrays.sort(c);
+        Arrays.sort(d);
+        if(Arrays.equals(c,d))
+            System.out.print(a +" and "+b+" are Anagrams.");
+        else 
+            System.out.print(a+" and "+b+" are Not Anagrams.");
+            
+    }
+}
