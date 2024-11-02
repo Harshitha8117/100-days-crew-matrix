@@ -1,1 +1,67 @@
-hcf
+Pattern n = 9 98765432* 9876543*1 987654*21 98765*321 9876*4321 987*54321 98*654321 9*7654321 *87654321
+
+Input Format
+
+int
+
+Constraints
+
+NULL
+
+Output Format
+
+Pattern
+
+Sample Input 0
+
+9
+Sample Output 0
+
+98765432*
+9876543*1
+987654*21
+98765*321
+9876*4321
+987*54321
+98*654321
+9*7654321
+*87654321
+Sample Input 1
+
+8
+Sample Output 1
+
+8765432*
+876543*1
+87654*21
+8765*321
+876*4321
+87*54321
+8*654321
+*7654321
+
+Solution:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=n;j>=1;j--){
+                if(j==i)
+                    System.out.print('*');
+                else 
+                    System.out.print(j);
+               
+                }
+            System.out.println();
+                
+            }
+    }
+}
