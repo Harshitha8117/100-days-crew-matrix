@@ -1,1 +1,51 @@
-fksh
+Write a c program to check whether a given string is Pangram or not
+
+A pangram is a sentence containing every letter in the English Alphabet.
+
+Input Format
+
+Accept the string as input
+
+Constraints
+
+NULL
+
+Output Format
+
+Pangrams / Not Pangrams
+
+Sample Input 0
+
+The quick brown fox jumps over the lazy dog
+Sample Output 0
+
+Pangrams
+Explanation 0
+
+Every letter in the English Alphabet.
+
+Solution:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String sen=s.toLowerCase();
+        int count=0;
+        for(char c='a';c<='z';c++){
+            if(!(sen.contains(String.valueOf(c))))
+                 count+=1;
+                 }
+                 if(count==0)
+                System.out.print("Pangrams");
+            else 
+                System.out.print("Not Pangrams");
+
+    }
+}
