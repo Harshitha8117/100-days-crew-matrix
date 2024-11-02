@@ -1,1 +1,52 @@
-gkzmzh
+String Compare
+
+Input Format
+
+Accept two string as input
+
+Constraints
+
+NULL
+
+Output Format
+
+Equal / Not Equal
+
+Sample Input 0
+
+DreamDart
+DreamDart
+Sample Output 0
+
+Equal
+Explanation 0
+
+DreamDart == DreamDart , Equal
+
+Sample Input 1
+
+water
+class
+Sample Output 1
+
+Not Equal
+
+Solution:
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String c=sc.nextLine();
+        if(s.equalsIgnoreCase(c))
+            System.out.print("Equal");
+        else 
+            System.out.println("Not Equal");
+    }
+}
