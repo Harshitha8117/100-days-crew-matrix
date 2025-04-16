@@ -1,1 +1,15 @@
-theek
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		String a="75432";
+		int s= a.chartAt(0)-'0';
+		System.out.println(s);
+
+	}
+}
