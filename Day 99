@@ -1,0 +1,29 @@
+class Solution {
+    public boolean backspaceCompare(String s, String t) {
+        char a[]=s.toCharArray();
+        char b[]=t.toCharArray();
+        int count=0;
+        int cou=0;
+
+        Stack<Character> res=new Stack<>();
+
+        for(char ss:a){
+            if(ss!='#'){
+                res.push(ss);
+                count++;
+            }
+        }
+
+        for(char st:b){
+            if(st!='#'){
+                res.push(st);
+                cou++;
+            }
+        }
+
+        if(count==cou)
+        return true;
+        else
+        return false;
+    }
+}
